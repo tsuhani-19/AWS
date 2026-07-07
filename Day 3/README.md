@@ -237,12 +237,48 @@ HTTPS → Port 443
 
 ------------------------------------------------------------------------
 
-# Key Pair
 
-Used for secure SSH login.
+### AWS Regions and Availability Zones
 
+A **Region** is a geographical location where AWS has multiple data
+centers. Each Region contains multiple **Availability Zones (AZs)**.
 
+An **Availability Zone** is an isolated data center with independent
+power, cooling, and networking.
+
+**Example:** If your application is deployed only in Mumbai AZ-a and a
+power outage or short circuit affects that AZ, your application may
+experience downtime. If you deploy your application across multiple
+Availability Zones (AZ-a, AZ-b, and AZ-c), AWS can continue serving
+traffic from the healthy zones, improving availability and fault
+tolerance.
+
+### Steps to Launch an EC2 Instance
+
+1.  Open the AWS Management Console.
+2.  Go to EC2.
+3.  Click **Launch Instance**.
+4.  Enter an instance name.
+5.  Select an Operating System (AMI). For learning, choose a **Free Tier
+    Eligible** AMI.
+6.  Choose an instance type such as **t3.micro** (or the current
+    free-tier eligible instance).
+7.  Create or select a **Key Pair**.
+8.  Configure networking and Security Groups.
+9.  Choose storage. **8 GB** is sufficient for most learning purposes.
+10. Click **Launch Instance**.
+
+### Key Pair
+
+AWS disables password login for Linux EC2 instances by default.
+Authentication is performed using a **Key Pair**, which consists of a
+**Public Key** (stored by AWS) and a **Private Key (.pem)** (downloaded
+by you). The private key is required to securely connect to your EC2
+instance using SSH.
+
+ bash
 ssh -i my-key.pem ubuntu@<public-ip>
+
 
 
 ------------------------------------------------------------------------
