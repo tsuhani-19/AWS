@@ -169,7 +169,8 @@ not.
 -   Why is Route 53 considered a global service?
 
 
-# Route53 Interview Handbook - Part 2
+
+
 
 # Q6. Why can't we directly use IP addresses?
 
@@ -349,7 +350,7 @@ Unlike CNAME, Alias records can be used at the root domain (zone apex).
 -   Can an Alias point to an EC2 instance directly?
 -   How does a Private Hosted Zone interact with a VPC?
 
-# Route53 Interview Handbook - Part 3
+
 
 # Q11. Explain the complete DNS resolution process in detail.
 
@@ -529,7 +530,7 @@ Therefore, DNS supports both UDP and TCP, although UDP is the default.
 -   Mention browser cache, OS cache, and recursive resolver before
     discussing root and TLD servers.
 
-# Route53 Interview Handbook - Part 4
+
 
 # Q16. What are Route 53 Routing Policies?
 
@@ -735,7 +736,7 @@ Application Load Balancer**.
     distance.
 
 
-# Route53 Interview Handbook -- Part 5
+
 
 # Q24. What are Route 53 Health Checks?
 
