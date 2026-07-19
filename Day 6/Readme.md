@@ -1,4 +1,4 @@
-# Amazon Route 53 -- Detailed Study Notes (Part 1)
+# Amazon Route 53
 
 ## Introduction
 
@@ -124,7 +124,7 @@ Suppose a user enters `myshop.com` in a browser.
 > Checks, Route 53 Resolver, Hybrid DNS, integrations, troubleshooting,
 > and interview questions in depth.
 
-# Amazon Route 53 -- Detailed Study Notes (Part 2)
+
 
 # Hosted Zones
 
